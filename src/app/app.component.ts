@@ -18,6 +18,7 @@ export class AppComponent {
       const numUpper = (this.temp.length - this.temp.replace(/[A-Z]/g, '').length).toString();
       const numLower = (this.stringToCount.length - this.stringToCount.replace(/[a-z]/g, '').length).toString();
       this.listOfSum.push('Given string: ' + this.stringToCount);
+      this.listOfSum.push('All letters: ' + this.stringToCount.length);
       this.listOfSum.push('Big letters: ' + numUpper);
       this.listOfSum.push('Small letters: ' + numLower);
       this.stringToCount = undefined;
